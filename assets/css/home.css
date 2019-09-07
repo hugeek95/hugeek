@@ -1,0 +1,66 @@
+.jumbotron {
+  background-image: url("assets/imgs/banner.jpg");
+  color: beige;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #26a9e1;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: none;
+    background-color: #26a9e1;
+  }
+}
+
+.ln {
+  width: 50px;
+}
+
+.ln:hover {
+  cursor: pointer;
+}
+form {
+  width: 60%;
+  padding: 10px;
+  margin-top: 10%;
+}
+
+form input {
+  border: 1px solid #26a9e1;
+}
+
+.info-hg {
+  margin: 10%;
+  color: black;
+  font-weight: 400;
+}
+
+.card {
+  opacity: 0;
+  -webkit-animation-name: aparece; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: aparece;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes aparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes aparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

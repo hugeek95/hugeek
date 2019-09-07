@@ -15,66 +15,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <style>
-      .jumbotron {
-        background-image: url("assets/imgs/banner.jpg");
-        color: beige;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #26a9e1;
-        border-radius: 0px;
-      }
-
-      @media (max-width: 768px) {
-        .jumbotron {
-          background-image: none;
-          background-color: #26a9e1;
-        }
-      }
-
-      .ln{
-        width: 50px;
-      }
-
-      .ln:hover{
-        cursor: pointer;
-      }
-      form{
-        width: 60%;
-        padding: 10px;
-        margin-top: 10%;
-      }
-
-      form input{
-        border: 1px solid #26a9e1;  
-      }
-
-      .info-hg{
-        margin: 10%;
-        color:black;
-        font-weight: 400;
-      }
-
-      .card {
-        opacity: 0;
-        -webkit-animation-name: aparece; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-        animation-name: aparece;
-        animation-duration: 4s;
-      }
-
-      /* Safari 4.0 - 8.0 */
-      @-webkit-keyframes aparece {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
-
-      /* Standard syntax */
-      @keyframes aparece {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/home.css">
   </head>
   <body>
     <!-- Image and text -->
@@ -197,7 +138,6 @@
                 </p>
                 <a href="https://www.linkedin.com/in/hugeek/">
                   <img src="assets/imgs/iconfinder_linkedin_circle_gray_107149.png" target="_blank" onmouseover="rollover(this)" onmouseout="mouseaway(this)" class="ln" alt="">
-                  <img src="assets/imgs/iconfinder_linkedin_circle_294706.png" class="linkedin" alt="">
                 </a>
               </div>
             </div>
@@ -216,6 +156,7 @@
                       class="form-control"
                       id="exampleFormControlInput1"
                       placeholder="nombre@ejemplo.com"
+                      required
                     />
                   </div>
                   <div class="form-group">
@@ -225,6 +166,7 @@
                       id="exampleFormControlTextarea1"
                       rows="3"
                       name="mensaje"
+                      required
                     ></textarea>
                   </div>
                   <div class="form-group">
