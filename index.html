@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/imgs/h.png" />
     <title>Hugeek 🤓💻</title>
     <link
       rel="stylesheet"
@@ -11,21 +12,253 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <style>
+      .jumbotron {
+        background-image: url("assets/imgs/banner.jpg");
+        color: beige;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #26a9e1;
+        border-radius: 0px;
+      }
+
+      @media (max-width: 768px) {
+        .jumbotron {
+          background-image: none;
+          background-color: #1a1a1a;
+        }
+      }
+
+      .ln{
+        width: 50px;
+      }
+
+      .ln:hover{
+        cursor: pointer;
+      }
+      form{
+        width: 60%;
+        padding: 10px;
+        margin-top: 10%;
+      }
+
+      form input{
+        border: 1px solid #26a9e1;  
+      }
+
+      .info-hg{
+        margin: 10%;
+        color:black;
+        font-weight: 400;
+      }
+
+    </style>
   </head>
   <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/imgs/h.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          
+          <li class="nav-item">
+              <a class="nav-link" href="#info-hugeek">¿Qué es hugeek?</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cursos">Cursos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
+      <h1 class="display-4">¡Hola a todos!</h1>
+      <p class="copyJumb lead 0">
+          Ésta es una página destinada a geeks <br>
+           y comunidad en general, que desee <br>
+            conocer los avances tecnológicos, <br>
+             mitos y verdades, tips de ciberseguridad,
+             <br> curiosidades y demás.
+
       </p>
-      <hr class="my-4" />
-      <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
-      </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="card-deck" id="cursos">
+          <div class="card">
+            <img
+              src="http://www.solucionesim.net/blog/wp-content/uploads/2016/05/diseno_web.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Diseño web</h5>
+              <p class="card-text">
+                Aprende a crear sitios web estáticos con HTML5, CSS3, JS Y
+                BOOTSTRAP.
+              </p>
+              <p class="card-text">
+                  <a href="#" class="btn btn-primary">Ver más</a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="card">
+              <img
+              src="https://roboticadeinformatica.files.wordpress.com/2013/01/karelomi.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Karel JS</h5>
+              <p class="card-text">
+                  Aprende lógica de programación con nuestro amigable amigo
+                  Karel el robot.
+              </p>
+              <p class="card-text">
+                  <a href="#" class="btn btn-primary">Ver más</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+              <img src="assets/imgs/depositphotos_158566076-stock-photo-diy-electronic-maker-tools-components.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Electrónica básica</h5>
+                <p class="card-text">
+                    Aprende los conceptos de electrónica, que te permitirán
+                    convertirte en un maker.
+                </p>
+                <p class="card-text">
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+          
+      <div class="row" id="me">
+        <div class="col-12">
+          <div class="tab-content info-hg" id="info-hugeek">
+            <div
+              class="tab-pane active"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="col-12 col-md-3">
+                <img
+                  class="img-thumbnail rounded float-left mt-1 mr-3"
+                  src="https://scontent.fmex8-2.fna.fbcdn.net/v/t1.0-9/49841144_2249957575261462_6357935797320024064_n.jpg?_nc_cat=107&_nc_oc=AQkFVhKBV5ZsaRyxJJbaZxo7QNSdib9Jgl0vMst_v-g88mTf7zphBhhcwnllzV3-KFk&_nc_ht=scontent.fmex8-2.fna&oh=9249e7de211a03cb384996d5c18c6be7&oe=5DA4B73B"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-md-9">
+                <p>
+                  ¡Hola, me llamo Victor Hugo! y yo soy Hugeek, es decir un amante de la tecnología,
+                 estudié Ing. en Comunicaciones y electrónica con especialidad en computación en el Insituto Politécnico Nacional (🇲🇽), soy programador fullstack,
+                  emprendedor y CEO de Clibook una startup de salud digital.
+
+                  Y lancé este proyecto porque me gusta compartir conocimiento, además de ser una fuente de contacto para desarrollos y consultoría.
+                </p>
+                <a href="https://www.linkedin.com/in/hugeek/">
+                  <img src="assets/imgs/iconfinder_linkedin_circle_gray_107149.png" target="_blank" onmouseover="rollover(this)" onmouseout="mouseaway(this)" class="ln" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <div class="row">
+              <div class="col-12">
+                <form action="https://formspree.io/cursos@clibook.mx" method="POST" id="contacto">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="nombre@ejemplo.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      name="mensaje"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn-primary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <p>Copyright © Todos los Derechos Reservados del autor Hugeek 2019</p>
+            </div>
+          </div>
+
+      </footer>
+      
+
+      <script>
+        function rollover(my_image)
+        {
+            my_image.src = 'assets/imgs/iconfinder_linkedin_circle_294706.png';
+        }
+
+        function mouseaway(my_image)
+        {
+
+            my_image.src = "assets/imgs/iconfinder_linkedin_circle_gray_107149.png";
+
+        }
+
+      </script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v4.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="2249956155261604"
+      logged_in_greeting="¡Hola! ¿en qué te puedo ayudar?"
+      logged_out_greeting="¡Hola! ¿en qué te puedo ayudar?">
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
