@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="assets/imgs/h.png" />
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <title>Hugeek 🤓💻</title>
     <link
       rel="stylesheet"
@@ -25,7 +28,7 @@
       @media (max-width: 768px) {
         .jumbotron {
           background-image: none;
-          background-color: #1a1a1a;
+          background-color: #26a9e1;
         }
       }
 
@@ -52,6 +55,25 @@
         font-weight: 400;
       }
 
+      .card {
+        opacity: 0;
+        -webkit-animation-name: aparece; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: aparece;
+        animation-duration: 4s;
+      }
+
+      /* Safari 4.0 - 8.0 */
+      @-webkit-keyframes aparece {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      /* Standard syntax */
+      @keyframes aparece {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
     </style>
   </head>
   <body>
@@ -68,21 +90,20 @@
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          
           <li class="nav-item">
-              <a class="nav-link" href="#info-hugeek">¿Qué es hugeek?</a>
-            </li>
+            <a class="nav-link" href="#info-hugeek">¿Qué es hugeek?</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#cursos">Cursos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
         </ul>
       </div>
     </nav>
     <div class="jumbotron">
-      <h1 class="display-4">¡Hola a todos!</h1>
+      <h1 class="display-4 fadeInLeft animated  delay-0.7s">¡Hola a todos!</h1>
       <p class="copyJumb lead 0">
           Ésta es una página destinada a geeks <br>
            y comunidad en general, que desee <br>
@@ -97,7 +118,7 @@
     <div class="container">
       <div class="row">
         <div class="card-deck" id="cursos">
-          <div class="card">
+          <div class="card bounceIn animated delay-0.5s">
             <img
               src="http://www.solucionesim.net/blog/wp-content/uploads/2016/05/diseno_web.jpg"
               class="card-img-top"
@@ -115,7 +136,7 @@
             </div>
           </div>
           
-          <div class="card">
+          <div class="card bounceIn animated delay-0.5s">
               <img
               src="https://roboticadeinformatica.files.wordpress.com/2013/01/karelomi.png"
               class="card-img-top"
@@ -133,7 +154,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card bounceIn animated delay-0.5s">
               <img src="assets/imgs/depositphotos_158566076-stock-photo-diy-electronic-maker-tools-components.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Electrónica básica</h5>
@@ -176,6 +197,7 @@
                 </p>
                 <a href="https://www.linkedin.com/in/hugeek/">
                   <img src="assets/imgs/iconfinder_linkedin_circle_gray_107149.png" target="_blank" onmouseover="rollover(this)" onmouseout="mouseaway(this)" class="ln" alt="">
+                  <img src="assets/imgs/iconfinder_linkedin_circle_294706.png" class="linkedin" alt="">
                 </a>
               </div>
             </div>
@@ -222,6 +244,7 @@
       <script>
         function rollover(my_image)
         {
+          console.log(my_image)
             my_image.src = 'assets/imgs/iconfinder_linkedin_circle_294706.png';
         }
 
